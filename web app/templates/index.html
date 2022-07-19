@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>MY FLASK APP</title>
+
+{% endblock %}
+
+
+
+{% block body %}
+
+<h1>Nutritional Status Classification!</h1>
+
+<div class="container card">
+  <form class="container mx-3 my-3" action="{{ url_for('index')}}" method="POST" enctype="multipart/form-data" style="width: 100%">
+    <h2 class="" >Upload your image:</h2>
+
+    <label class=""><b>Upload</b></label>
+    <input type="file" accept=".jpg, .jpeg, .png" name="imgfile" required>
+
+    <!-- <input id="id1" class="input border" name="Pclass" placeholder="Pclass" required="required" type="number" ></p> -->
+    
+    <button onclick="myFunction()" type="submit" class="btn btn-primary btn-block btn-large border" style="width:100%;">Predict</button>
+  </form>
+</div>
+
+{% endblock %}

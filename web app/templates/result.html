@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>MY FLASK APP</title>
+
+{% endblock %}
+
+<!--  -->
+
+{% block body %}
+
+<h2>Results: </h2>
+<img src="{{ image }}" alt="img">
+
+<div class="center card p-2"> 
+  <h2>{{ prediction_text }}</h2>
+</div>
+   
+
+
+{% endblock %}
